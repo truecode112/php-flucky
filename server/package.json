@@ -1,0 +1,17 @@
+{
+    "name": "Fluky",
+    "description": "Signalling server for Fluky",
+    "version": "2.2.1",
+    "scripts": {
+        "local": "node local.js",
+        "production": "pm2 start app.js --name 'Fluky'",
+        "turn": "pm2 start turnserver"
+    },
+    "dependencies": {
+        "dotenv": "^10.0.0",
+        "express": "",
+        "geoip-country": "^4.0.60",
+        "nodemon": "^2.0.7",
+        "socket.io": "^2.3.0"
+    }
+}

@@ -1,0 +1,247 @@
+@font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    src: url(./../webfonts/poppins/pxiEyp8kv8JHgFVrJJbecmNE.woff2) format("woff2");
+    unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+
+
+/* latin-ext */
+
+@font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    src: url(./../webfonts/poppins/pxiEyp8kv8JHgFVrJJnecmNE.woff2) format("woff2");
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+
+/* latin */
+
+@font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    src: url(./../webfonts/poppins/pxiEyp8kv8JHgFVrJJfecg.woff2) format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+}
+
+.preview {
+    background: lightgrey;
+}
+
+.preview img {
+    max-width: 100px;
+}
+
+.dataTables_info {
+    font-size: 12px;
+    padding-top: 13px !important;
+}
+
+.pagination li a {
+    font-size: 12px;
+}
+
+.close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: grey;
+    z-index: 1;
+    text-shadow: none;
+    opacity: unset;
+}
+
+.reported-image:hover {
+    cursor: pointer;
+}
+
+.sidebar-mini.sidebar-collapse.layout-fixed .brand-link {
+    text-align: center;
+}
+
+.sidebar-collapse .brand-link .letter-set {
+    display: inline-table;
+}
+
+.sidebar-collapse .brand-link img {
+    display: none;
+}
+
+.brand-link {
+    position: relative;
+}
+
+.brand-link img {
+    width: 160px;
+    height: 35px;
+    object-fit: contain;
+}
+
+.letter-set {
+    color: #fff;
+    margin: auto;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 5px 15px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: none;
+}
+
+.sidebar-mini.sidebar-collapse .main-sidebar.sidebar-focused .brand-link img,
+.sidebar-mini.sidebar-collapse .main-sidebar:hover .brand-link img {
+    width: 135px;
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover,
+.dropdown-item.active,
+.dropdown-item:active {
+    color: #16181b;
+    text-decoration: none;
+    background-color: #f8f9fa;
+}
+
+
+/* ----------------------------------------------------------------
+
+	style-rtl.scss
+
+-----------------------------------------------------------------*/
+
+[dir="rtl"] html,
+[dir="rtl"] body {
+    direction: rtl;
+    text-align: right;
+}
+
+[dir="rtl"] .layout-fixed .main-sidebar {
+    right: 0;
+}
+
+[dir="rtl"] body:not(.sidebar-mini-md):not(.sidebar-mini-xs):not(.layout-top-nav) .content-wrapper,
+[dir="rtl"] body:not(.sidebar-mini-md):not(.sidebar-mini-xs):not(.layout-top-nav) .main-footer,
+[dir="rtl"] body:not(.sidebar-mini-md):not(.sidebar-mini-xs):not(.layout-top-nav) .main-header {
+    margin-left: 0;
+    padding-right: 250px;
+    transition: padding-right 0.3s ease-in-out;
+}
+
+[dir="rtl"] .content-header,
+[dir="rtl"] div.dataTables_wrapper div.dataTables_filter {
+    direction: ltr;
+    text-align: left;
+}
+
+[dir="rtl"] .small-box .icon>i {
+    left: 15px;
+    right: auto;
+}
+
+[dir="rtl"] .nav-sidebar {
+    padding-right: 0;
+}
+
+[dir="rtl"] .btn-group-sm>.btn,
+[dir="rtl"] .btn-sm {
+    margin-left: 5px;
+}
+
+[dir="rtl"] .form-control-sm {
+    text-align: right;
+}
+
+[dir="rtl"] .pagination {
+    gap: 5px;
+}
+
+[dir="rtl"] .navbar-nav.mr-auto {
+    margin-left: auto !important;
+    margin-right: 0 !important;
+    padding-right: 0 !important;
+}
+
+[dir="rtl"] .navbar-nav.ml-auto {
+    margin-right: auto !important;
+    margin-left: 0 !important;
+}
+
+[dir="rtl"] .sidebar-mini.sidebar-collapse .content-wrapper,
+[dir="rtl"] .sidebar-mini.sidebar-collapse .main-footer,
+[dir="rtl"] .sidebar-mini.sidebar-collapse .main-header {
+    margin-right: 4.6rem !important;
+    margin-left: 0 !important;
+}
+
+[dir="rtl"] .sidebar-mini.sidebar-collapse .main-sidebar,
+[dir="rtl"] .sidebar-mini.sidebar-collapse .main-sidebar::before {
+    width: 4.6rem;
+    margin-right: 0;
+    margin-left: auto;
+}
+
+[dir="rtl"] .sidebar-mini.sidebar-collapse .content-wrapper,
+[dir="rtl"] .sidebar-mini.sidebar-collapse .main-footer,
+[dir="rtl"] .sidebar-mini.sidebar-collapse .main-header {
+    padding-right: 0.6rem !important;
+    margin-left: auto !important;
+}
+
+[dir="rtl"] .main-sidebar,
+[dir="rtl"] .main-sidebar::before {
+    transition: padding-right 0.3s ease-in-out;
+}
+
+[dir="rtl"] .small-box-footer i {
+    margin-right: 10px;
+}
+
+[dir="rtl"] .sidebar-mini.sidebar-collapse .main-sidebar.sidebar-focused,
+[dir="rtl"] .sidebar-mini.sidebar-collapse .main-sidebar:hover {
+    width: 250px;
+}
+
+[dir="rtl"] body:not(.sidebar-mini-md):not(.sidebar-mini-xs):not(.layout-top-nav) .content-wrapper,
+[dir="rtl"] body:not(.sidebar-mini-md):not(.sidebar-mini-xs):not(.layout-top-nav) .main-footer,
+[dir="rtl"] body:not(.sidebar-mini-md):not(.sidebar-mini-xs):not(.layout-top-nav) .main-header {
+    transition: margin-right 0.3s ease-in-out;
+}
+
+[dir="rtl"] .main-sidebar,
+[dir="rtl"] .main-sidebar::before {
+    transition: margin-right 0.3s ease-in-out, width 0.3s ease-in-out;
+}
+
+@media only screen and (max-width: 1024px) {
+    [dir="rtl"] body:not(.sidebar-mini-md):not(.sidebar-mini-xs):not(.layout-top-nav) .content-wrapper,
+    [dir="rtl"] body:not(.sidebar-mini-md):not(.sidebar-mini-xs):not(.layout-top-nav) .main-footer,
+    [dir="rtl"] body:not(.sidebar-mini-md):not(.sidebar-mini-xs):not(.layout-top-nav) .main-header {
+        margin-left: 0;
+        padding-right: 0px;
+    }
+    [dir="rtl"] .sidebar-collapse .main-sidebar,
+    [dir="rtl"] .sidebar-collapse .main-sidebar::before {
+        margin-right: -250px !important;
+    }
+    [dir="rtl"] .sidebar-mini.sidebar-collapse .content-wrapper,
+    [dir="rtl"] .sidebar-mini.sidebar-collapse .main-footer,
+    [dir="rtl"] .sidebar-mini.sidebar-collapse .main-header {
+        margin-right: 0 !important;
+    }
+    [dir="rtl"] .sidebar-mini.sidebar-collapse .content-wrapper,
+    [dir="rtl"] .sidebar-mini.sidebar-collapse .main-footer,
+    [dir="rtl"] .sidebar-mini.sidebar-collapse .main-header {
+        padding-right: 0 !important;
+    }
+}
